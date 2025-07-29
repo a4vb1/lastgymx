@@ -1,0 +1,9 @@
+<resources>
+    <!-- النمط الرئيسي للتطبيق -->
+    <style name="Theme.LastGym" parent="Theme.AppCompat.DayNight">
+        <!-- تخصيص الألوان والخطوط إذا لزم -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

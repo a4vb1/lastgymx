@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- اسم التمرين -->
+    <TextView
+        android:id="@+id/exercise_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:text="اسم التمرين"
+        android:layout_marginBottom="16dp" />
+
+    <!-- وصف التمرين -->
+    <TextView
+        android:id="@+id/exercise_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#555"
+        android:text="وصف التمرين"
+        android:layout_marginBottom="16dp" />
+
+    <!-- حقول إدخال البيانات -->
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الوزن (كجم)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/repetitions_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عدد التكرارات"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/sets_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عدد الجلسات"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <!-- زر الحفظ -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حفظ البيانات" />
+</LinearLayout>
