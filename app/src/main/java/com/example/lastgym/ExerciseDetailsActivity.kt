@@ -52,8 +52,8 @@ class ExerciseDetailsActivity : AppCompatActivity() {
 
         exerciseTitle.text = exerciseName
         
-        // تعيين الوصف الحقيقي للتمرين باستخدام ExerciseDescriptions
-        exerciseDescription.text = ExerciseDescriptions.getDescription(exerciseName)
+        // تعيين وصف مؤقت للتمرين
+        exerciseDescription.text = "وصف التمرين سيتم إضافته لاحقاً. هذا النص مؤقت لعرض شكل التطبيق وإمكانياته."
 
         // إعداد زر الحفظ
         saveButton.setOnClickListener {
