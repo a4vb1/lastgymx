@@ -13,9 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // رسالة ترحيبية
-        supportActionBar?.title = "مرحباً بك في تطبيق التمارين الرياضية"
-
         // قائمة العضلات الرئيسية
         val muscles = listOf(
             "الظهر (Back)",
@@ -23,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             "الأرجل (Legs)",
             "الأكتاف (Shoulders)",
             "البايسبس (Biceps)",
-            "الترايسبس (Triceps)",
+            "الترابيزوس (Trapezius)",
             "السواعد (Forearms)"
         )
 
