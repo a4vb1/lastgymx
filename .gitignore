@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Temporary files and scripts
+/tmp/
+*.tmp
