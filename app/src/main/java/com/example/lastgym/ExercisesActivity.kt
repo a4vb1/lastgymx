@@ -23,7 +23,7 @@ class ExercisesActivity : AppCompatActivity() {
             "الأرجل (Legs)" -> listOf("Squat", "Leg Press", "Lunges")
             "الأكتاف (Shoulders)" -> listOf("Overhead Press", "Lateral Raise", "Front Raise")
             "البايسبس (Biceps)" -> listOf("Barbell Curl", "Hammer Curl", "Concentration Curl")
-            "الترابيزوس (Trapezius)" -> listOf("Barbell Shrugs", "Dumbbell Shrugs", "Upright Row")
+            "الترايسبس (Triceps)" -> listOf("Triceps Pushdown", "Skull Crushers", "Dips")
             "السواعد (Forearms)" -> listOf("Wrist Curl", "Reverse Curl", "Farmer's Carry")
             else -> emptyList()
         }
