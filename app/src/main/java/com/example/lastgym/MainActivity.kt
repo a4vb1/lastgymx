@@ -33,5 +33,22 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("MUSCLE_NAME", muscle)
             startActivity(intent)
         }
+        
+        // إضافة إحصائيات بسيطة
+        displayWorkoutStats()
+    }
+    
+    private fun displayWorkoutStats() {
+        val dbHelper = DatabaseHelper(this)
+        val totalWorkouts = dbHelper.getTotalWorkoutCount()
+        val lastWorkoutDate = dbHelper.getLastWorkoutDate()
+        
+        // يمكن إضافة عرض هذه الإحصائيات في TextView إضافي في المستقبل
+        // أو في منطقة مخصصة للإحصائيات
+        supportActionBar?.subtitle = if (totalWorkouts > 0) {
+            "إجمالي التمارين: $totalWorkouts"
+        } else {
+            "ابدأ أول تمرين لك!"
+        }
     }
 }
