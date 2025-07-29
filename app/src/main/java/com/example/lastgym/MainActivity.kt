@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             "الأرجل (Legs)",
             "الأكتاف (Shoulders)",
             "البايسبس (Biceps)",
-            "الترايسبس (Triceps)",
+            "الترابيزوس (Trapezius)",
             "السواعد (Forearms)"
         )
 
