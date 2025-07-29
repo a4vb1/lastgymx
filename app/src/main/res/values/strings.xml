@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">lastgym</string>
+    <string name="app_name">LastGym</string>
+    <string name="welcome_message">مرحباً بك في تطبيق التمارين الرياضية</string>
+    <string name="select_muscle_instruction">اختر العضلة التي تريد تدريبها من القائمة أدناه</string>
+    <string name="select_exercise_instruction">اختر التمرين الذي تريد ممارسته</string>
+    <string name="exercise_details_title">تفاصيل التمرين: %s</string>
+    <string name="exercise_data_input">إدخال بيانات التمرين</string>
+    <string name="previous_workouts">سجل التمارين السابقة</string>
+    <string name="weight_hint">الوزن (كجم)</string>
+    <string name="repetitions_hint">عدد التكرارات</string>
+    <string name="sets_hint">عدد الجلسات</string>
+    <string name="select_date">اختر التاريخ</string>
+    <string name="date_label">التاريخ: %s</string>
+    <string name="save_data">حفظ البيانات</string>
+    <string name="placeholder_description">وصف التمرين سيتم إضافته لاحقاً. هذا النص مؤقت لعرض شكل التطبيق وإمكانياته.</string>
+    <string name="data_saved_successfully">تم حفظ البيانات بنجاح</string>
+    <string name="fill_all_fields">يرجى ملء جميع الحقول</string>
+    <string name="enter_valid_values">يرجى إدخال قيم صحيحة أكبر من الصفر</string>
+    <string name="enter_valid_numbers">يرجى إدخال أرقام صحيحة</string>
+    <string name="error_saving_data">حدث خطأ أثناء حفظ البيانات</string>
+    <string name="workout_details">الوزن: %1$.1f كجم، التكرارات: %2$d، الجلسات: %3$d</string>
 </resources>

@@ -3,18 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:background="#F8F9FA"
+    android:padding="16dp">
 
+    <!-- وصف الصفحة -->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Exercises Activity!"
-        android:textSize="24sp"
-        android:textColor="#000"/>
+        android:text="اختر التمرين الذي تريد ممارسته"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:background="#E8F5E8"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
+    <!-- قائمة التمارين -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_exercises"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
 </LinearLayout>

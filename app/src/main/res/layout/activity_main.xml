@@ -3,12 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F8F9FA"
     android:padding="16dp">
+
+    <!-- رسالة الترحيب -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مرحباً بك في تطبيق التمارين الرياضية"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:gravity="center"
+        android:background="#E8F5E8"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- وصف التطبيق -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اختر العضلة التي تريد تدريبها من القائمة أدناه"
+        android:textSize="16sp"
+        android:textColor="#555"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
 
     <!-- RecyclerView لعرض قائمة العضلات -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="8dp" />
+
 </LinearLayout>

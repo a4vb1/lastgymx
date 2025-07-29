@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -13,6 +17,18 @@
         android:textSize="24sp"
         android:textColor="#000"
         android:text="اسم التمرين"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- صورة التمرين (placeholder) -->
+    <ImageView
+        android:id="@+id/exercise_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#E0E0E0"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_gallery"
         android:layout_marginBottom="16dp" />
 
     <!-- وصف التمرين -->
@@ -22,8 +38,20 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="#555"
-        android:text="وصف التمرين"
+        android:text="وصف التمرين سيتم إضافته لاحقاً. هذا النص مؤقت لعرض شكل التطبيق."
+        android:background="#F5F5F5"
+        android:padding="12dp"
         android:layout_marginBottom="16dp" />
+
+    <!-- تسمية قسم إدخال البيانات -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إدخال بيانات التمرين"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="12dp" />
 
     <!-- حقول إدخال البيانات -->
     <EditText
@@ -32,6 +60,8 @@
         android:layout_height="wrap_content"
         android:hint="الوزن (كجم)"
         android:inputType="numberDecimal"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
         android:layout_marginBottom="8dp" />
 
     <EditText
@@ -40,6 +70,8 @@
         android:layout_height="wrap_content"
         android:hint="عدد التكرارات"
         android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
         android:layout_marginBottom="8dp" />
 
     <EditText
@@ -48,6 +80,16 @@
         android:layout_height="wrap_content"
         android:hint="عدد الجلسات"
         android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- حقل التاريخ -->
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اختر التاريخ"
         android:layout_marginBottom="16dp" />
 
     <!-- زر الحفظ -->
@@ -55,5 +97,28 @@
         android:id="@+id/save_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="حفظ البيانات" />
+        android:text="حفظ البيانات"
+        android:textSize="16sp"
+        android:background="#4CAF50"
+        android:textColor="white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- تسمية قسم السجل -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="سجل التمارين السابقة"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="12dp" />
+
+    <!-- قائمة السجل -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
 </LinearLayout>
+</ScrollView>
